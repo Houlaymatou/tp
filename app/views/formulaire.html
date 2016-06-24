@@ -1,0 +1,23 @@
+<div class="jumbotron col-md-8 col-md-offset-2">
+     {{auteur.nom}} {{auteur.prenom}} {{auteur.fonction}}
+	<div class="form-group" >
+		<form ng-submit="modifAuteur(auteur.id_auteur)">
+		    <div>
+			    <label>Nom </label>
+				<input type="text" name="" value="nom" class="form-control" ng-model="newNom">
+			</div>
+			<div>
+				<label>Prenom</label>
+				<input type="text" name="" value="prenom" class="form-control" ng-model="newPrenom">
+			</div>
+			<div>
+				<label>Fonction</label>
+				<input type="text" name="" value="fonction" class="form-control" ng-model="newFonction">
+			</div>
+			
+				<input type="submit" name="" value="Envoyer" class="btn btn-info">
+				<a href="#/auteurs"  class="btn btn-primary" > Auteurs</a>
+			
+		</form>
+	</div> 
+</div>
